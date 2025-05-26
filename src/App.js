@@ -1,37 +1,36 @@
 import React, {useState} from 'react';
-import {SafeAreaView, View, Switch, FlatList, Text} from 'react-native';
+import {SafeAreaView, View, Text, Switch, FlatList} from 'react-native';
 
-const data = [
-  {id: 0, name: 'cafe.exe', isFavorite: true},
-  {id: 1, name: 'KafaKafe', isFavorite: false},
-  {id: 2, name: 'BugB', isFavorite: false},
-  {id: 3, name: "Rock'n Code", isFavorite: true},
-  {id: 4, name: 'do(drink)', isFavorite: false},
-  {id: 5, name: 'esc', isFavorite: false},
+const allFruits = [
+  {id: 1, name: 'Elma', isFavorite: true},
+  {id: 2, name: 'Muz', isFavorite: false},
+  {id: 3, name: 'Çilek', isFavorite: true},
+  {id: 4, name: 'Karpuz', isFavorite: false},
 ];
 
 const App = () => {
-  const [cafeList, setCafeList] = useState(data);
-  const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
+  const [isFavoriteleriGosterecekState, setIsFavoriteleriGosterecekState] =
+    useState(false);
 
-  function onFavoritesChange(isFavoriteSelected) {
-    setShowOnlyFavorites(isFavoriteSelected);
-    isFavoriteSelected
-      ? setCafeList(cafeList.filter(cafe => cafe.isFavorite))
-      : setCafeList(data);
-  }
+  //burada bir
+  const meyveleriFiltreleme = () => {
+    return isFavoriteleriGosterecekState
+      ? allFruits.filter(herhangibirşey => herhangibirşey.isFavorite)
+      : allFruits;
+  };
+
+  const değişkenatama = meyveleriFiltreleme();
 
   return (
     <SafeAreaView>
-      <View style={{margin: 10}}>
-        <Text>Show only Favorites</Text>
-        <Switch value={showOnlyFavorites} onValueChange={onFavoritesChange} />
-      </View>
+      <Text>selam</Text>
+      <Switch
+        value={isFavoriteleriGosterecekState}
+        onValueChange={setIsFavoriteleriGosterecekState}
+      />
       <FlatList
-        data={cafeList}
-        renderItem={({item}) => (
-          <Text style={{fontSize: 25}}> {item.name} </Text>
-        )}
+        data={değişkenatama}
+        renderItem={data => <Text>{data.item.name} </Text>}
       />
     </SafeAreaView>
   );
