@@ -1,38 +1,43 @@
 import React, {useState} from 'react';
-import {SafeAreaView, View, Text, Switch, FlatList} from 'react-native';
-
-const allFruits = [
-  {id: 1, name: 'Elma', isFavorite: true},
-  {id: 2, name: 'Muz', isFavorite: false},
-  {id: 3, name: 'Çilek', isFavorite: true},
-  {id: 4, name: 'Karpuz', isFavorite: false},
-];
+import {SafeAreaView, View, Text, Switch, StyleSheet} from 'react-native';
 
 const App = () => {
-  const [isFavoriteleriGosterecekState, setIsFavoriteleriGosterecekState] =
-    useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  //burada bir
-  const meyveleriFiltreleme = () => {
-    return isFavoriteleriGosterecekState
-      ? allFruits.filter(herhangibirşey => herhangibirşey.isFavorite)
-      : allFruits;
+  const toggleSwitch = () => {
+    if (isDarkMode) {
+      setIsDarkMode(false);
+    } else {
+      setIsDarkMode(true);
+    }
   };
 
-  const değişkenatama = meyveleriFiltreleme();
+  const backGroundStyle = isDarkMode
+    ? styles.darkBackground
+    : styles.lightBackground;
+  const textStyle = isDarkMode ? styles.darkModeText : styles.lightModeText;
 
   return (
-    <SafeAreaView>
-      <Text>selam</Text>
-      <Switch
-        value={isFavoriteleriGosterecekState}
-        onValueChange={setIsFavoriteleriGosterecekState}
-      />
-      <FlatList
-        data={değişkenatama}
-        renderItem={data => <Text>{data.item.name} </Text>}
-      />
+    <SafeAreaView style={[styles.container, backGroundStyle]}>
+      <Text style={textStyle}>
+        {isDarkMode ? 'Dark Mod Açık' : 'Dark Mod Kapalı'}{' '}
+      </Text>
+      <Switch value={isDarkMode} onValueChange={toggleSwitch} />
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  darkBackground: {
+    backgroundColor: '#000',
+  },
+  darkModeText: {
+    color: 'white',
+  },
+});
 export default App;
