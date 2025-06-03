@@ -1,0 +1,116 @@
+[
+  {
+    "id": 0,
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3147657.png&w=350&h=254",
+    "playerName": "Mikal Bridges",
+    "playerNumber": 25,
+    "playerPosition": "Small Forward",
+    "isFive": true
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3934719.png&w=350&h=254",
+    "playerName": "OG Anunoby",
+    "playerNumber": 8,
+    "playerPosition": "Small Forward",
+    "isFive": true
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4431823.png&w=350&h=254",
+    "playerName": "Miles McBride",
+    "playerNumber": 2,
+    "playerPosition": "Point Guard",
+    "isFive": false
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3062679.png&w=350&h=254",
+    "playerName": "Josh Hart",
+    "playerNumber": 3,
+    "playerPosition": "Point Guard",
+    "isFive": false
+  },
+
+  {
+    "id": 4,
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3934672.png&w=350&h=254",
+    "playerName": "Jalen Brunson",
+    "playerNumber": 11,
+    "playerPosition": "Point Guard",
+    "isFive": true
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4431679.png&w=350&h=254",
+    "playerName": "Precious Achiuwa",
+    "playerNumber": 5,
+    "playerPosition": "Point Guard",
+    "isFive": false
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4871141.png&w=350&h=254",
+    "playerName": "Ariel Hukporti",
+    "playerNumber": 55,
+    "playerPosition": "Point Guard",
+    "isFive": false
+  },
+  {
+    "id": 7,
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3136195.png&w=350&h=254",
+    "playerName": "Karl-Anthony Towns",
+    "playerNumber": 32,
+    "playerPosition": "Center",
+    "isFive": true
+  },
+  {
+    "id": 8,
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4351852.png&w=350&h=254",
+    "playerName": "Mitchell Robinson",
+    "playerNumber": 23,
+    "playerPosition": "Center",
+    "isFive": true
+  },
+
+  {
+    "id": 9,
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064447.png&w=350&h=254",
+    "playerName": "Delon Wright",
+    "playerNumber": 0,
+    "playerPosition": "Point Guard",
+    "isFive": false
+  },
+  {
+    "id": 10,
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3914044.png&w=350&h=254",
+    "playerName": "Landry Shamet",
+    "playerNumber": 44,
+    "playerPosition": "Point Guard",
+    "isFive": false
+  },
+  {
+    "id": 11,
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064447.png&w=350&h=254",
+    "playerName": "Delon Wright",
+    "playerNumber": 0,
+    "playerPosition": "Point Guard",
+    "isFive": false
+  },
+  {
+    "id": 12,
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4433225.png&w=350&h=254",
+    "playerName": "Tyler Kolek",
+    "playerNumber": 13,
+    "playerPosition": "Point Guard",
+    "isFive": false
+  },
+  {
+    "id": 13,
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/5211983.png&w=350&h=254",
+    "playerName": "Pacome Dadiet",
+    "playerNumber": 4,
+    "playerPosition": "Point Guard",
+    "isFive": false
+  }
+]
