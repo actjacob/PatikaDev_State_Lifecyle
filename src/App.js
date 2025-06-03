@@ -8,80 +8,57 @@ import {
   StyleSheet,
 } from 'react-native';
 
-import playerData from './player_data.json';
-import indianaPlayer from './indiana_data.json';
-import PlayerCard from './PlayerCard';
+const cafeList = [
+  {id: 0, name: 'cafe.exe', isFavorite: true},
+  {id: 1, name: 'KafaKafe', isFavorite: false},
+  {id: 2, name: 'BugG', isFavorite: false},
+  {id: 3, name: 'Rock`n Code', isFavorite: true},
+  {id: 4, name: 'do(drink)', isFavorite: false},
+];
+
 const App = () => {
-  const [firstFiveTeam1, setFirstFiveTeam1] = useState(false);
-  const [firstFiveTeam2, setFirstFiveTeam2] = useState(false);
+  const [darkTeam, setDarkTeam] = useState(false);
+  const [list, setList] = useState(false);
 
-  const showTeam1 = firstFiveTeam1
-    ? playerData.filter(player => player.isFive)
-    : playerData;
+  const gösterilecekListe = list
+    ? cafeList.filter(gösterilecek => gösterilecek.isFavorite)
+    : cafeList;
 
-  const showTeam2 = firstFiveTeam2
-    ? indianaPlayer.filter(player => player.isFive)
-    : indianaPlayer;
+  const darkTemaSitili = [
+    styles.container,
+    darkTeam ? styles.darkTema : styles.acıkTema,
+  ];
 
   return (
-    <SafeAreaView>
-      <View style={styles.switchContainer}>
-        <View style={styles.teamSwitch}>
-          <Switch
-            value={firstFiveTeam1}
-            onValueChange={value => setFirstFiveTeam1(value)}
-          />
-          <Text style={styles.status}>
-            {firstFiveTeam1 ? 'First Five' : 'Team'}
-          </Text>
-        </View>
-
-        <View style={styles.teamSwitch}>
-          <Switch
-            value={firstFiveTeam2}
-            onValueChange={value => setFirstFiveTeam2(value)}
-          />
-          <Text style={styles.status}>
-            {firstFiveTeam2 ? 'First Five' : 'Team'}
-          </Text>
-        </View>
-      </View>
-
-      <View style={styles.flatStyle}>
-        <View style={{flex: 1}}>
-          <FlatList
-            data={showTeam1}
-            keyExtractor={item => item.id.toString()}
-            renderItem={({item}) => <PlayerCard players={item} team="team1" />}
-          />
-        </View>
-
-        <View style={{flex: 1}}>
-          <FlatList
-            data={showTeam2}
-            keyExtractor={item => item.id.toString()}
-            renderItem={({item}) => <PlayerCard players={item} team="team2" />}
-          />
-        </View>
+    <SafeAreaView style={darkTemaSitili}>
+      <Switch value={darkTeam} onValueChange={value => setDarkTeam(value)} />
+      <Text style={{color: darkTeam ? 'white' : 'black'}}>
+        {darkTeam ? 'Koyu Mod' : 'Açık Mod'}{' '}
+      </Text>
+      <View>
+        <Switch value={list} onValueChange={value => setList(value)} />
+        <FlatList
+          data={gösterilecekListe}
+          renderItem={({item}) => (
+            <Text style={{color: darkTeam ? 'white' : 'black'}}>
+              {item.name}
+            </Text>
+          )}
+        />
       </View>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  flatStyle: {
-    flexDirection: 'row',
+  container: {
+    flex: 1,
   },
-
-  switchContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    marginVertical: 10,
+  darkTema: {
+    backgroundColor: 'black',
   },
-
-  status: {
-    fontWeight: 'bold',
-    fontSize: 24,
+  acıkTema: {
+    backgroundColor: 'white',
   },
 });
 export default App;
