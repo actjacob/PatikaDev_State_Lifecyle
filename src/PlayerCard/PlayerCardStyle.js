@@ -12,10 +12,10 @@ export default StyleSheet.create({
     backgroundColor: 'orange',
   },
   backgroundTeam1: {
-    backgroundColor: 'orange',
+    backgroundColor: '#7aa1ea',
   },
   backgroundTeam2: {
-    backgroundColor: 'yellow',
+    backgroundColor: '#2358ba',
   },
   image: {
     margin: 2,
@@ -33,6 +33,10 @@ export default StyleSheet.create({
   },
   playerNumber: {
     fontWeight: 'bold',
+  },
+  playerInfoContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   playerPosition: {
     fontStyle: 'italic',

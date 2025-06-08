@@ -4,7 +4,7 @@
     "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4396993.png&w=350&h=254",
     "playerName": "Pascal Siakam",
     "playerNumber": 43,
-    "playerPosition": "Small Forward",
+    "playerPosition": "Power Forward",
     "isFive": true
   },
   {
@@ -20,7 +20,7 @@
     "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/5106060.png&w=350&h=254",
     "playerName": "Jarace Walker",
     "playerNumber": 5,
-    "playerPosition": "Bench",
+    "playerPosition": "Power Forward ",
     "isFive": false
   },
   {
@@ -28,7 +28,7 @@
     "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/5157066.png&w=350&h=254",
     "playerName": "Johnny Furphy",
     "playerNumber": 12,
-    "playerPosition": "Bench",
+    "playerPosition": "Shooting Guard",
     "isFive": false
   },
   {
@@ -44,7 +44,7 @@
     "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3975.png&w=350&h=254",
     "playerName": "James Johnson",
     "playerNumber": 16,
-    "playerPosition": "Bench",
+    "playerPosition": "Power Forward ",
     "isFive": false
   },
   {
@@ -52,7 +52,7 @@
     "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4396993.png&w=350&h=254",
     "playerName": "Obi Toppin",
     "playerNumber": 1,
-    "playerPosition": "Bench",
+    "playerPosition": "Power Forward",
     "isFive": false
   },
   {
@@ -60,7 +60,7 @@
     "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3133628.png&w=350&h=254",
     "playerName": "Myles Turner",
     "playerNumber": 33,
-    "playerPosition": "Center",
+    "playerPosition": "Center ",
     "isFive": true
   },
   {
@@ -68,7 +68,7 @@
     "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4396909.png&w=350&h=254",
     "playerName": "Andrew Nembhard",
     "playerNumber": 2,
-    "playerPosition": "Center",
+    "playerPosition": "Point Guard ",
     "isFive": true
   },
   {
@@ -76,7 +76,7 @@
     "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3934714.png&w=350&h=254",
     "playerName": "Thomas Bryant",
     "playerNumber": 3,
-    "playerPosition": "Bench",
+    "playerPosition": "Center",
     "isFive": false
   },
   {
@@ -84,7 +84,7 @@
     "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2528779.png&w=350&h=254",
     "playerName": "T.J. McConnell",
     "playerNumber": 9,
-    "playerPosition": "Bench",
+    "playerPosition": "Point Guard",
     "isFive": false
   },
   {
@@ -92,7 +92,7 @@
     "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4683137.png&w=350&h=254",
     "playerName": "Bennedict Mathurin",
     "playerNumber": 0,
-    "playerPosition": "Bench",
+    "playerPosition": "Shooting Guard ",
     "isFive": false
   },
   {
@@ -100,7 +100,7 @@
     "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4433137.png&w=350&h=254",
     "playerName": "Ben Sheppard",
     "playerNumber": 26,
-    "playerPosition": "Bench",
+    "playerPosition": "Shooting Guard",
     "isFive": false
   },
   {
@@ -108,7 +108,7 @@
     "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4431677.png&w=350&h=254",
     "playerName": "Isaiah Jackson",
     "playerNumber": 22,
-    "playerPosition": "Bench",
+    "playerPosition": "/ Center",
     "isFive": false
   }
 ]

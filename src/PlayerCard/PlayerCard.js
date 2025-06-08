@@ -21,9 +21,11 @@ const PlayerCard = ({players, team}) => {
       <View style={styles.innerContainer}>
         <Text style={styles.playerName}>{players.playerName} </Text>
         <Text style={styles.playerNumber}>#{players.playerNumber} </Text>
-        {/* <Text>playerİsFive </Text> */}
       </View>
-      <Text style={styles.playerPosition}>{players.playerPosition} </Text>
+      <View style={styles.playerInfoContainer}>
+        <Text style={styles.playerPosition}>{players.playerPosition} </Text>
+        <Text style={styles.playerIsFive}>{players.isFive ? '' : 'Bench'}</Text>
+      </View>
     </View>
   );
 };
